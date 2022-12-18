@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="style/style.css"> -->
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="#">ZCode</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container-xxl">
+      <div class="row align-items-center">
+        <div class="col-7">
+          <h1>Добро пожаловать в ZCode</h1>
+        </div>
+        <div class="col-5">
+          <img class="w-100"
+            src="https://image.jimcdn.com/app/cms/image/transf/dimension=520x10000:format=png/path/s43e4a9d08b9a6b1c/image/i2891325d93d0cfb2/version/1396444479/image.png"
+            alt="ZCode">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-xxl">
+      <h2>Активные курсы</h2>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://miro.medium.com/max/1400/1*m0H6-tUbW6grMlezlb52yw.png" class="card-img-top"
+                    alt="python">
+                  <div class="card-body">
+                    <h5 class="card-title">Язык программирования Python</h5>
+                    <p class="card-text">Длительность курса составляет 6 месяцев.</p>
+                    <a href="#" class="btn btn-primary">Оставить заявку!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://miro.medium.com/max/1400/1*m0H6-tUbW6grMlezlb52yw.png" class="card-img-top"
+                    alt="python">
+                    <div class="card-body">
+                      <h5 class="card-title">Язык программирования Python</h5>
+                      <p class="card-text">Длительность курса составляет 6 месяцев.</p>
+                      <a href="#" class="btn btn-primary">Оставить заявку!</a>
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://magicmethod.ru/contents/blog/2020/go-programming-language-for-gophers/golang.png"
+                    class="card-img-top" alt="Go">
+                    <div class="card-body">
+                      <h5 class="card-title">Язык программирования Go</h5>
+                      <p class="card-text">Длительность курса составляет 6 месяцев.</p>
+                      <a href="#" class="btn btn-primary">Оставить заявку!</a>
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="data:image/png;base64,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"
+                    class="card-img-top" alt="Dart">
+                    <div class="card-body">
+                      <h5 class="card-title">Язык программирования Dart</h5>
+                    <p class="card-text">Длительность курса составляет 6 месяцев.</p>
+                    <a href="#" class="btn btn-primary">Оставить заявку!</a>
+                    </div>
+
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png" class="card-img-top"
+                    alt="C#">
+                    <div class="card-body">
+                      <h5 class="card-title">Язык программирования C#</h5>
+                    <p class="card-text">Длительность курса составляет 6 месяцев.</p>
+                    <a href="#" class="btn btn-primary">Оставить заявку!</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://miro.medium.com/max/1400/1*m0H6-tUbW6grMlezlb52yw.png" class="card-img-top"
+                    alt="python">
+                    <div class="card-body">
+                      <h5 class="card-title">Язык программирования Python</h5>
+                    <p class="card-text">Длительность курса составляет 6 месяцев.</p>
+                    <a href="#" class="btn btn-primary">Оставить заявку!</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="data:image/jpeg;base64,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"
+                    class="card-img-top" alt="Java">
+                    <div class="card-body">
+                      <h5 class="card-title">Язык программирования Java</h5>
+                    <p class="card-text">Длительность курса составляет 6 месяцев.</p>
+                    <a href="#" class="btn btn-primary">Оставить заявку!</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://bestprogrammer.ru/wp-content/uploads/2020/08/C-.jpg" class="card-img-top" alt="C++">
+                  <div class="card-body">
+                    <h5 class="card-title">Язык программирования C++</h5>
+                  <p class="card-text">Длительность курса составляет 6 месяцев.</p>
+                  <a href="#" class="btn btn-primary">Оставить заявку!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
